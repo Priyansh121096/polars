@@ -349,12 +349,12 @@ def test_datetime_supertype_5236() -> None:
     df = pd.DataFrame(
         {
             "StartDateTime": [
-                pd.Timestamp(datetime.utcnow(), tz="UTC"),
-                pd.Timestamp(datetime.utcnow(), tz="UTC"),
+                pd.Timestamp.now(tz="UTC"),
+                pd.Timestamp.now(tz="UTC"),
             ],
             "EndDateTime": [
-                pd.Timestamp(datetime.utcnow(), tz="UTC"),
-                pd.Timestamp(datetime.utcnow(), tz="UTC"),
+                pd.Timestamp.now(tz="UTC"),
+                pd.Timestamp.now(tz="UTC"),
             ],
         }
     )

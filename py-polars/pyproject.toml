@@ -207,6 +207,8 @@ markers = [
 filterwarnings = [
   # Fail on warnings...
   "error",
+  # Warning resulting from pandas internals
+  "ignore:datetime.datetime.utcfromtimestamp\\(\\) is deprecated.*:DeprecationWarning",
   # ...except where it prevents test debugging in an IPython console
   "ignore:.*unrecognized arguments.*PyDevIPCompleter:DeprecationWarning",
   "ignore:.*is_sparse is deprecated.*:FutureWarning",
