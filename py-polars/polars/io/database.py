@@ -719,7 +719,7 @@ def _read_sql_connectorx(
     except ModuleNotFoundError:
         raise ModuleNotFoundError(
             "connectorx is not installed"
-            "\n\nPlease run: pip install connectorx>=0.3.2"
+            "\n\nPlease run: pip install 'connectorx>=0.3.2'"
         ) from None
 
     try:
