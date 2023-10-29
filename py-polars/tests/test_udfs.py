@@ -19,6 +19,7 @@ from typing import Any, Callable
 
 import pytest
 
+# TODO: Import these from py-polars/tests/unit/operations/test_inefficient_apply.py
 MY_CONSTANT = 3
 MY_DICT = {0: "a", 1: "b", 2: "c", 3: "d", 4: "e"}
 MY_LIST = [1, 2, 3]
